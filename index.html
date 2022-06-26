@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body class="">
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="css/img/logo.svg" alt="" />
+        </a>
+        <!-- data-bs-toggle="collapse" -->
+        <button class="navbar-toggler" type="button" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="navbar-nav ms-0 ms-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Whitepaper</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#about-us">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-hs-accent ms-0 ms-lg-4 w-100 w-lg-auto">
+            Launch app
+          </a>
+          <ul class="socials socials_size_lg d-flex d-lg-none mt-auto mx-auto">
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+        <path
+          d="M30.9975 5.5755L4.40252 15.831C2.58752 16.56 2.59802 17.5725 4.06952 18.024L10.8975 20.154L26.6955 10.1865C27.4425 9.732 28.125 9.9765 27.564 10.4745L14.7645 22.026H14.7615L14.7645 22.0275L14.2935 29.0655C14.9835 29.0655 15.288 28.749 15.675 28.3755L18.9915 25.1505L25.89 30.246C27.162 30.9465 28.0755 30.5865 28.392 29.0685L32.9205 7.7265C33.384 5.868 32.211 5.0265 30.9975 5.5755Z"
+          fill="currentColor"></path>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke-width="2">
+        <path
+          d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578 9.3 9.3 0 0 1-2.958 1.13 4.66 4.66 0 0 0-7.938 4.25 13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568 4.692 4.692 0 0 1-2.104.08 4.661 4.661 0 0 0 4.352 3.234 9.348 9.348 0 0 1-5.786 1.995 9.5 9.5 0 0 1-1.112-.065 13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003z">
+        </path>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"
+          fill="currentColor"></path>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor"
+          d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z">
+        </path>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
+        <g clip-path="url(#clip0_78:491)">
+          <path
+            d="M30.4755 6.73799C28.1805 5.70299 25.7205 4.93799 23.148 4.50299C23.1251 4.49859 23.1014 4.50143 23.0801 4.5111C23.0589 4.52078 23.0412 4.53681 23.0295 4.55699C22.7145 5.11049 22.3635 5.83199 22.1175 6.40199C19.3891 5.99435 16.6153 5.99435 13.887 6.40199C13.613 5.77028 13.304 5.15433 12.9615 4.55699C12.9499 4.53656 12.9323 4.52017 12.9111 4.50998C12.89 4.4998 12.8662 4.49631 12.843 4.49999C10.272 4.93499 7.81199 5.69999 5.51549 6.73649C5.49573 6.74478 5.47898 6.75891 5.46749 6.77699C0.799489 13.6395 -0.480011 20.3325 0.148489 26.9415C0.150237 26.9577 0.155262 26.9733 0.163256 26.9875C0.17125 27.0017 0.182047 27.0141 0.194989 27.024C2.91958 29.0076 5.95849 30.5187 9.18449 31.494C9.20698 31.5009 9.23103 31.5009 9.25351 31.4939C9.27599 31.487 9.29584 31.4734 9.31049 31.455C10.0035 30.525 10.6215 29.5425 11.1495 28.5105C11.181 28.4505 11.151 28.3785 11.088 28.3545C10.119 27.9896 9.18012 27.5492 8.27999 27.0375C8.26381 27.0283 8.25019 27.0152 8.24032 26.9994C8.23046 26.9836 8.22468 26.9656 8.22349 26.947C8.2223 26.9284 8.22574 26.9098 8.23351 26.8929C8.24128 26.8759 8.25312 26.8612 8.26799 26.85C8.45699 26.7105 8.64599 26.565 8.82599 26.4195C8.84219 26.4064 8.86171 26.3981 8.88236 26.3954C8.90302 26.3928 8.92401 26.3959 8.94299 26.4045C14.8335 29.0505 21.213 29.0505 27.0345 26.4045C27.0535 26.3954 27.0747 26.3919 27.0957 26.3942C27.1166 26.3966 27.1365 26.4049 27.153 26.418C27.333 26.565 27.5205 26.7105 27.711 26.85C27.726 26.861 27.738 26.8755 27.7461 26.8923C27.7541 26.9091 27.7578 26.9276 27.7569 26.9462C27.756 26.9647 27.7505 26.9828 27.7409 26.9987C27.7314 27.0147 27.718 27.028 27.702 27.0375C26.805 27.5535 25.872 27.99 24.8925 28.353C24.8774 28.3585 24.8637 28.3671 24.8523 28.3782C24.8408 28.3894 24.8319 28.4029 24.8261 28.4178C24.8203 28.4327 24.8177 28.4487 24.8185 28.4647C24.8194 28.4807 24.8236 28.4963 24.831 28.5105C25.371 29.541 25.989 30.522 26.6685 31.4535C26.6826 31.4726 26.7023 31.4869 26.7248 31.4944C26.7474 31.5019 26.7717 31.5023 26.7945 31.4955C30.026 30.523 33.0699 29.0112 35.7975 27.024C35.8108 27.0147 35.822 27.0026 35.8302 26.9887C35.8385 26.9747 35.8437 26.9591 35.8455 26.943C36.5955 19.302 34.5885 12.663 30.522 6.77999C30.512 6.76087 30.4955 6.74597 30.4755 6.73799ZM12.03 22.917C10.257 22.917 8.79449 21.3135 8.79449 19.347C8.79449 17.379 10.2285 15.777 12.03 15.777C13.845 15.777 15.294 17.3925 15.2655 19.347C15.2655 21.315 13.8315 22.917 12.03 22.917ZM23.9925 22.917C22.218 22.917 20.757 21.3135 20.757 19.347C20.757 17.379 22.1895 15.777 23.9925 15.777C25.8075 15.777 27.2565 17.3925 27.228 19.347C27.228 21.315 25.809 22.917 23.9925 22.917Z"
+            fill="currentColor"></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_78:491">
+            <rect width="36" height="36" fill="white"></rect>
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+  </li>
+</ul>
+        </div>
+      </div>
+    </nav>
+    <div class="navbar-backdrop"></div>
+  </header>
+  <!-- HEADER END-->
+
+<!-- CONTENT -->
+<main class="content">
+  <section class="hero py-4">
+    <div class="container">
+      <h1 class="mb-2 mb-xl-3 text-center">Smart liquidity management</h1>
+      <div class="d-flex justify-content-center">
+        <div class="col-12 col-md-8 col-xl-6 text-center">
+          <p class="fs-3 lh-sm mb-4 pb-2 fw-semibold">AMM DEX built on innovative technical principles with a goal
+            of improving benefits for liquidity providers (LP’s) and reducing risk exposure for traders</p>
+          <a href="#" class="btn btn-hs-accent">
+            Launch app
+          </a>
+          <div class="row mt-5 mt-sm-7">
+            <div class="col-12 col-sm-6">
+              <div class="bg-rounded-gradient text-center rounded-5 p-4">
+                <div class="fs-xs text-uppercase mb-1">
+                  TOTAL VALUE LOCKED
+                </div>
+                <div class="fs-3 text-uppercase fw-semibold">
+                  € 455,676,095
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mt-2 mt-sm-0">
+              <div class="bg-rounded-gradient text-center rounded-5 p-4">
+                <div class="fs-xs text-uppercase mb-1">
+                  TOTAL VALUE LOCKED
+                </div>
+                <div class="fs-3 text-uppercase fw-semibold">
+                  € 455,676,095
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="socials socials_vertical d-none d-lg-block">
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+        <path
+          d="M30.9975 5.5755L4.40252 15.831C2.58752 16.56 2.59802 17.5725 4.06952 18.024L10.8975 20.154L26.6955 10.1865C27.4425 9.732 28.125 9.9765 27.564 10.4745L14.7645 22.026H14.7615L14.7645 22.0275L14.2935 29.0655C14.9835 29.0655 15.288 28.749 15.675 28.3755L18.9915 25.1505L25.89 30.246C27.162 30.9465 28.0755 30.5865 28.392 29.0685L32.9205 7.7265C33.384 5.868 32.211 5.0265 30.9975 5.5755Z"
+          fill="currentColor"></path>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke-width="2">
+        <path
+          d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578 9.3 9.3 0 0 1-2.958 1.13 4.66 4.66 0 0 0-7.938 4.25 13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568 4.692 4.692 0 0 1-2.104.08 4.661 4.661 0 0 0 4.352 3.234 9.348 9.348 0 0 1-5.786 1.995 9.5 9.5 0 0 1-1.112-.065 13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003z">
+        </path>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"
+          fill="currentColor"></path>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor"
+          d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z">
+        </path>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
+        <g clip-path="url(#clip0_78:491)">
+          <path
+            d="M30.4755 6.73799C28.1805 5.70299 25.7205 4.93799 23.148 4.50299C23.1251 4.49859 23.1014 4.50143 23.0801 4.5111C23.0589 4.52078 23.0412 4.53681 23.0295 4.55699C22.7145 5.11049 22.3635 5.83199 22.1175 6.40199C19.3891 5.99435 16.6153 5.99435 13.887 6.40199C13.613 5.77028 13.304 5.15433 12.9615 4.55699C12.9499 4.53656 12.9323 4.52017 12.9111 4.50998C12.89 4.4998 12.8662 4.49631 12.843 4.49999C10.272 4.93499 7.81199 5.69999 5.51549 6.73649C5.49573 6.74478 5.47898 6.75891 5.46749 6.77699C0.799489 13.6395 -0.480011 20.3325 0.148489 26.9415C0.150237 26.9577 0.155262 26.9733 0.163256 26.9875C0.17125 27.0017 0.182047 27.0141 0.194989 27.024C2.91958 29.0076 5.95849 30.5187 9.18449 31.494C9.20698 31.5009 9.23103 31.5009 9.25351 31.4939C9.27599 31.487 9.29584 31.4734 9.31049 31.455C10.0035 30.525 10.6215 29.5425 11.1495 28.5105C11.181 28.4505 11.151 28.3785 11.088 28.3545C10.119 27.9896 9.18012 27.5492 8.27999 27.0375C8.26381 27.0283 8.25019 27.0152 8.24032 26.9994C8.23046 26.9836 8.22468 26.9656 8.22349 26.947C8.2223 26.9284 8.22574 26.9098 8.23351 26.8929C8.24128 26.8759 8.25312 26.8612 8.26799 26.85C8.45699 26.7105 8.64599 26.565 8.82599 26.4195C8.84219 26.4064 8.86171 26.3981 8.88236 26.3954C8.90302 26.3928 8.92401 26.3959 8.94299 26.4045C14.8335 29.0505 21.213 29.0505 27.0345 26.4045C27.0535 26.3954 27.0747 26.3919 27.0957 26.3942C27.1166 26.3966 27.1365 26.4049 27.153 26.418C27.333 26.565 27.5205 26.7105 27.711 26.85C27.726 26.861 27.738 26.8755 27.7461 26.8923C27.7541 26.9091 27.7578 26.9276 27.7569 26.9462C27.756 26.9647 27.7505 26.9828 27.7409 26.9987C27.7314 27.0147 27.718 27.028 27.702 27.0375C26.805 27.5535 25.872 27.99 24.8925 28.353C24.8774 28.3585 24.8637 28.3671 24.8523 28.3782C24.8408 28.3894 24.8319 28.4029 24.8261 28.4178C24.8203 28.4327 24.8177 28.4487 24.8185 28.4647C24.8194 28.4807 24.8236 28.4963 24.831 28.5105C25.371 29.541 25.989 30.522 26.6685 31.4535C26.6826 31.4726 26.7023 31.4869 26.7248 31.4944C26.7474 31.5019 26.7717 31.5023 26.7945 31.4955C30.026 30.523 33.0699 29.0112 35.7975 27.024C35.8108 27.0147 35.822 27.0026 35.8302 26.9887C35.8385 26.9747 35.8437 26.9591 35.8455 26.943C36.5955 19.302 34.5885 12.663 30.522 6.77999C30.512 6.76087 30.4955 6.74597 30.4755 6.73799ZM12.03 22.917C10.257 22.917 8.79449 21.3135 8.79449 19.347C8.79449 17.379 10.2285 15.777 12.03 15.777C13.845 15.777 15.294 17.3925 15.2655 19.347C15.2655 21.315 13.8315 22.917 12.03 22.917ZM23.9925 22.917C22.218 22.917 20.757 21.3135 20.757 19.347C20.757 17.379 22.1895 15.777 23.9925 15.777C25.8075 15.777 27.2565 17.3925 27.228 19.347C27.228 21.315 25.809 22.917 23.9925 22.917Z"
+            fill="currentColor"></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_78:491">
+            <rect width="36" height="36" fill="white"></rect>
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+  </li>
+</ul>
+  </section>
+  <section id="features" class="features mb-5 mb-lg-7 pt-5 pt-lg-6 position-relative">
+    <div class="gradient-bg gradient-bg_1">
+      <div class="gradient-bg__img"></div>
+    </div>
+    <div class="container">
+      <div class="text-center mb-4md mb-lg-6">
+        <h2 class="mb-2 mb-lg-3">Features</h2>
+        <p class="fs-4">Hypersea provides Ecosystem-Wide Liquidity for users and projects.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mb-3 mb-lg-0">
+          <div class="bg-primary p-4 p-lg-4md rounded-5 text-center">
+            <img src="http://via.placeholder.com/80x80" alt="" class="rounded img-fluid mb-4">
+            <h3 class="mb-2">Swap</h3>
+            <p class="mb-4 fs-xs w-lg-50 mx-auto">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur,
+              adipisci
+              velit...</p>
+            <a href="#" class="btn btn-hs-outline-accent">Enter Exchange</a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3 mb-lg-0">
+          <div class="bg-primary p-4 p-lg-4md rounded-5 text-center">
+            <img src="http://via.placeholder.com/80x80" alt="" class="rounded img-fluid mb-4">
+            <h3 class="mb-2">Swap</h3>
+            <p class="mb-4 fs-xs w-lg-50 mx-auto">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur,
+              adipisci
+              velit...</p>
+            <a href="#" class="btn btn-hs-outline-accent">Enter Exchange</a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3 mb-lg-0">
+          <div class="bg-primary p-4 p-lg-4md rounded-5 text-center">
+            <img src="http://via.placeholder.com/80x80" alt="" class="rounded img-fluid mb-4">
+            <h3 class="mb-2">Swap</h3>
+            <p class="mb-4 fs-xs w-lg-50 mx-auto">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur,
+              adipisci
+              velit...</p>
+            <a href="#" class="btn btn-hs-outline-accent">Enter Exchange</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="benefits mb-5 mb-lg-7 pt-0 pt-lg-6 position-relative">
+    <div class="gradient-bg gradient-bg_2">
+      <div class="gradient-bg__img"></div>
+    </div>
+    <div class="container">
+      <div class="text-center mb-4md mb-lg-6">
+        <h2 class="mb-2 mb-lg-3">Benefits</h2>
+        <p class="fs-4">Hypersea provides Ecosystem-Wide Liquidity for users and projects.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mb-3 mb-lg-0">
+          <div class="bg-primary p-4 p-lg-4md rounded-5 position-relative overflow-hidden h-100 d-flex flex-column">
+            <img src="css/img/benefit-bg_1.png" alt="" class="position-absolute top-50 end-0 translate-middle-y">
+            <div class="pt-7">
+              <div class="position-relative pt-4 pt-lg-5 pe-0 pe-lg-6">
+                <h3 class="mb-3">Taking care of users
+                  and liquidity providers</h3>
+                <p class="fs-4 lh-sm mb-0">Lower slippage, less profit for arbitrage traders (more for
+                  liquidity providers + users).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3 mb-lg-0">
+          <div class="bg-primary p-4 p-lg-4md rounded-5 position-relative overflow-hidden h-100 d-flex flex-column">
+            <img src="css/img/benefit-bg_2.png" alt="" class="position-absolute top-50 end-0 translate-middle-y">
+            <div class="pt-7">
+              <div class="position-relative pt-4 pt-lg-5 pe-0 pe-lg-6">
+                <h3 class="mb-3">More stable income and
+                  lower impermanent loss</h3>
+                <p class="fs-4 lh-sm mb-0">We provide a steady income and reduce the risk of regular losses due to high
+                  liquidity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3 mb-lg-0">
+          <div class="bg-primary p-4 p-lg-4md rounded-5 position-relative overflow-hidden h-100 d-flex flex-column">
+            <img src="css/img/benefit-bg_3.png" alt="" class="position-absolute bottom-0 end-0">
+            <div class="pt-7">
+              <div class="position-relative pt-4 pt-lg-5 pe-0 pe-lg-6">
+                <h3 class="mb-3">Best Price Swaps</h3>
+                <p class="fs-4 lh-sm mb-0">We determine whether swapping within a liquidity pool or through the order
+                  book will provide the best price for the user, and executes accordingly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about-us" class="about-us mb-lg-4md pt-0 pt-lg-6">
+    <div class="container">
+      <div class="text-center mb-4md mb-lg-6">
+        <h2 class="mb-2 mb-lg-3">About us</h2>
+        <p class="fs-4 mb-4 w-100 w-md-50 mx-auto">Built on innovative technical principles with a goal of improving
+          benefits for liquidity
+          providers (LP's) and reducing risk exposure for traders</p>
+        <p class="fs-6 text-pink">See Roadmap on <a href="#" class="text-pink text-decoration-none fw-semibold">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 64 64"
+              class="align-bottom mx-1">
+              <path
+                d="M28.8 47.4c1 0 1.9.8 1.9 1.9 0 1-.8 1.9-1.9 1.9-1 0-1.9-.8-1.9-1.9 0-1.1.9-1.9 1.9-1.9m29.4-11.6c-1 0-1.9-.8-1.9-1.9 0-1 .8-1.9 1.9-1.9 1 0 1.9.8 1.9 1.9 0 1-.9 1.9-1.9 1.9m0-7.7c-3.2 0-5.8 2.6-5.8 5.8 0 .6.1 1.2.3 1.8L33.6 45.9c-1.1-1.6-2.9-2.5-4.8-2.5-2.2 0-4.2 1.3-5.2 3.2l-17.2-9c-1.8-1-3.2-3.9-3-6.7.1-1.4.6-2.5 1.3-2.9.5-.3 1-.2 1.7.1l.1.1c4.6 2.4 19.5 10.2 20.1 10.5 1 .4 1.5.6 3.2-.2l30.8-16c.5-.2 1-.6 1-1.3 0-.9-.9-1.3-.9-1.3-1.8-.8-4.5-2.1-7.1-3.3C48 14 41.6 11 38.8 9.5c-2.4-1.3-4.4-.2-4.7 0l-.7.3C20.7 16.2 3.9 24.5 2.9 25.1c-1.7 1-2.8 3.1-2.9 5.7-.2 4.1 1.9 8.4 4.9 9.9l18.2 9.4c.4 2.8 2.9 5 5.7 5 3.2 0 5.7-2.5 5.8-5.7l20-10.8c1 .8 2.3 1.2 3.6 1.2 3.2 0 5.8-2.6 5.8-5.8 0-3.3-2.6-5.9-5.8-5.9"
+                fill="currentColor" />
+            </svg>GitBook</a>
+        </p>
+      </div>
+      <div class="row justify-content-start justify-content-lg-center mb-n7">
+        <div class="col-6 col-lg-3 mb-7">
+          <div class="position-relative mb-4md">
+            <img src="css/img/person-bg.png" alt=""
+              class="position-absolute bottom-0 start-50 translate-middle-x img-fluid">
+            <img src="css/img/person-1.png" alt="" class="position-relative img-fluid mx-auto d-block"
+              style="padding-bottom: 2px;">
+          </div>
+          <h3 class="mb-1">Anatoly Ressin</h3>
+          <p class="fs-4 fw-light mb-3">Founder, Blockchain Architect</p>
+          <a href="#" class="d-inline-flex">
+            <svg width="48" height="48" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M28 20a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6ZM18 21h-4v12h4V21ZM16 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                fill="#FF536D" stroke="#FF536D" stroke-linecap="round" stroke-linejoin="round" />
+              <rect x=".5" y=".5" width="47" height="47" rx="23.5" stroke="#FF536D" />
+            </svg>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 mb-7">
+          <div class="position-relative mb-4md">
+            <img src="css/img/person-bg.png" alt=""
+              class="position-absolute bottom-0 start-50 translate-middle-x img-fluid">
+            <img src="css/img/person-ph.png" alt="" class="position-relative img-fluid mx-auto d-block"
+              style="padding-bottom: 2px;">
+          </div>
+          <h3 class="mb-1">Anatoly Ressin</h3>
+          <p class="fs-4 fw-light mb-3">Founder, Blockchain Architect</p>
+          <a href="#" class="d-inline-flex">
+            <svg width="48" height="48" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M28 20a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6ZM18 21h-4v12h4V21ZM16 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                fill="#FF536D" stroke="#FF536D" stroke-linecap="round" stroke-linejoin="round" />
+              <rect x=".5" y=".5" width="47" height="47" rx="23.5" stroke="#FF536D" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-gradient">
+        <div class="newsletter-gradient_item"></div>
+      </div>
+      <div class="bg-primary p-3 py-xl-5 rounded-5 position-relative overflow-hidden">
+        <img src="css/img/newsletter-bg.png" alt="" class="position-absolute top-50 start-50 translate-middle">
+        <div class="d-flex justify-content-center py-3">
+          <div class="col-xl-5 position-relative text-center">
+            <h2 class="mb-2 mb-xl-3">Newsletter</h2>
+            <p class="fs-4 lh-sm mb-4 pb-2">
+              Subscribe to our newsletter and get relevant information about the project
+            </p>
+            <form action="" class="newsletter-form">
+              <input type="text" class="form-control newsletter-form_control" placeholder="Enter your email">
+              <button type="submit" class="btn btn-hs-outline-accent">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="partners mb-6">
+    <div class="container">
+      <h2 class="mb-4md mb-lg-6 text-center">Partners</h2>
+      <div class="d-flex flex-wrap justify-content-around">
+        <img src="css/img/partner-1.png" alt="" class="p-2 img-fluid">
+        <img src="css/img/partner-2.png" alt="" class="p-2 img-fluid">
+        <img src="css/img/partner-3.png" alt="" class="p-2 img-fluid">
+        <img src="css/img/partner-4.png" alt="" class="p-2 img-fluid">
+      </div>
+    </div>
+  </section>
+</main>
+<!-- CONTENT END -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="border-top d-flex align-items-lg-center py-5 flex-column flex-lg-row">
+      <a href="#" class="footer-logo order-1 mb-4 mb-lg-0">
+        <img src="css/img/logo.svg" alt="" />
+      </a>
+      <ul class="nav ms-lg-auto me-lg-5 ms-n3 order-3 order-lg-2">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Whitepaper</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Documents</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+      </ul>
+      <a href="mailto:example@example.com" class="gradient-email ms-lg-4 order-2 mb-4 mb-lg-0">
+        info@hypersea.com
+      </a>
+    </div>
+    <div
+      class="border-top d-flex justify-content-between align-items-lg-center py-4 py-lg-2 flex-column-reverse flex-lg-row">
+      <div class="opacity-50 fs-6 fw-semibold mt-4 mt-lg-0">
+        Copyright © 2022 Hypersea
+      </div>
+      <div class="justify-content-lg-end">
+        <ul class="socials ">
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+        <path
+          d="M30.9975 5.5755L4.40252 15.831C2.58752 16.56 2.59802 17.5725 4.06952 18.024L10.8975 20.154L26.6955 10.1865C27.4425 9.732 28.125 9.9765 27.564 10.4745L14.7645 22.026H14.7615L14.7645 22.0275L14.2935 29.0655C14.9835 29.0655 15.288 28.749 15.675 28.3755L18.9915 25.1505L25.89 30.246C27.162 30.9465 28.0755 30.5865 28.392 29.0685L32.9205 7.7265C33.384 5.868 32.211 5.0265 30.9975 5.5755Z"
+          fill="currentColor"></path>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke-width="2">
+        <path
+          d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578 9.3 9.3 0 0 1-2.958 1.13 4.66 4.66 0 0 0-7.938 4.25 13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568 4.692 4.692 0 0 1-2.104.08 4.661 4.661 0 0 0 4.352 3.234 9.348 9.348 0 0 1-5.786 1.995 9.5 9.5 0 0 1-1.112-.065 13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003z">
+        </path>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"
+          fill="currentColor"></path>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor"
+          d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z">
+        </path>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a rel="nofollow" target="_blank" href="#" class="socials__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
+        <g clip-path="url(#clip0_78:491)">
+          <path
+            d="M30.4755 6.73799C28.1805 5.70299 25.7205 4.93799 23.148 4.50299C23.1251 4.49859 23.1014 4.50143 23.0801 4.5111C23.0589 4.52078 23.0412 4.53681 23.0295 4.55699C22.7145 5.11049 22.3635 5.83199 22.1175 6.40199C19.3891 5.99435 16.6153 5.99435 13.887 6.40199C13.613 5.77028 13.304 5.15433 12.9615 4.55699C12.9499 4.53656 12.9323 4.52017 12.9111 4.50998C12.89 4.4998 12.8662 4.49631 12.843 4.49999C10.272 4.93499 7.81199 5.69999 5.51549 6.73649C5.49573 6.74478 5.47898 6.75891 5.46749 6.77699C0.799489 13.6395 -0.480011 20.3325 0.148489 26.9415C0.150237 26.9577 0.155262 26.9733 0.163256 26.9875C0.17125 27.0017 0.182047 27.0141 0.194989 27.024C2.91958 29.0076 5.95849 30.5187 9.18449 31.494C9.20698 31.5009 9.23103 31.5009 9.25351 31.4939C9.27599 31.487 9.29584 31.4734 9.31049 31.455C10.0035 30.525 10.6215 29.5425 11.1495 28.5105C11.181 28.4505 11.151 28.3785 11.088 28.3545C10.119 27.9896 9.18012 27.5492 8.27999 27.0375C8.26381 27.0283 8.25019 27.0152 8.24032 26.9994C8.23046 26.9836 8.22468 26.9656 8.22349 26.947C8.2223 26.9284 8.22574 26.9098 8.23351 26.8929C8.24128 26.8759 8.25312 26.8612 8.26799 26.85C8.45699 26.7105 8.64599 26.565 8.82599 26.4195C8.84219 26.4064 8.86171 26.3981 8.88236 26.3954C8.90302 26.3928 8.92401 26.3959 8.94299 26.4045C14.8335 29.0505 21.213 29.0505 27.0345 26.4045C27.0535 26.3954 27.0747 26.3919 27.0957 26.3942C27.1166 26.3966 27.1365 26.4049 27.153 26.418C27.333 26.565 27.5205 26.7105 27.711 26.85C27.726 26.861 27.738 26.8755 27.7461 26.8923C27.7541 26.9091 27.7578 26.9276 27.7569 26.9462C27.756 26.9647 27.7505 26.9828 27.7409 26.9987C27.7314 27.0147 27.718 27.028 27.702 27.0375C26.805 27.5535 25.872 27.99 24.8925 28.353C24.8774 28.3585 24.8637 28.3671 24.8523 28.3782C24.8408 28.3894 24.8319 28.4029 24.8261 28.4178C24.8203 28.4327 24.8177 28.4487 24.8185 28.4647C24.8194 28.4807 24.8236 28.4963 24.831 28.5105C25.371 29.541 25.989 30.522 26.6685 31.4535C26.6826 31.4726 26.7023 31.4869 26.7248 31.4944C26.7474 31.5019 26.7717 31.5023 26.7945 31.4955C30.026 30.523 33.0699 29.0112 35.7975 27.024C35.8108 27.0147 35.822 27.0026 35.8302 26.9887C35.8385 26.9747 35.8437 26.9591 35.8455 26.943C36.5955 19.302 34.5885 12.663 30.522 6.77999C30.512 6.76087 30.4955 6.74597 30.4755 6.73799ZM12.03 22.917C10.257 22.917 8.79449 21.3135 8.79449 19.347C8.79449 17.379 10.2285 15.777 12.03 15.777C13.845 15.777 15.294 17.3925 15.2655 19.347C15.2655 21.315 13.8315 22.917 12.03 22.917ZM23.9925 22.917C22.218 22.917 20.757 21.3135 20.757 19.347C20.757 17.379 22.1895 15.777 23.9925 15.777C25.8075 15.777 27.2565 17.3925 27.228 19.347C27.228 21.315 25.809 22.917 23.9925 22.917Z"
+            fill="currentColor"></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_78:491">
+            <rect width="36" height="36" fill="white"></rect>
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+  </li>
+</ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER END -->
+
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
