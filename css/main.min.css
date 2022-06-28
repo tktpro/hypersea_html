@@ -7836,7 +7836,7 @@ fieldset:disabled .btn {
   --hs-pink-rgb: 255,83,109;
   --hs-tolopea: #0c0333;
   --hs-navy: #241b46;
-  --hs-header-height: 100px
+  --hs-header-height: 130px
 }
 body,
 html {
@@ -7845,9 +7845,10 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-image: url(img/body-bg.png);
+  background-image: url(img/body-bg.svg);
   background-repeat: no-repeat;
-  background-position: top center
+  background-position: top 40% center;
+  background-size: 2341px
 }
 .footer,
 .header {
@@ -7908,6 +7909,9 @@ body {
   position: absolute;
   width: 100%;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0,0,0);
   z-index: -1;
   filter: blur(10rem)
 }
@@ -7948,7 +7952,7 @@ body {
   --bs-btn-hover-color: var(--hs-tolopea);
   --bs-btn-hover-bg: #e64b62;
   --bs-btn-hover-border-color: #e64b62;
-  --bs-btn-focus-shadow-rgb: var(--hs-pink-rgb);
+  --bs-btn-focus-shadow-rgb: 0;
   --bs-btn-active-color: var(--bs-btn-hover-color);
   --bs-btn-active-bg: #cc4257;
   --bs-btn-active-border-color: #cc4257
@@ -7965,7 +7969,7 @@ body {
   --bs-btn-hover-color: var(--hs-tolopea);
   --bs-btn-hover-bg: #e64b62;
   --bs-btn-hover-border-color: #e64b62;
-  --bs-btn-focus-shadow-rgb: var(--hs-pink-rgb);
+  --bs-btn-focus-shadow-rgb: 0;
   --bs-btn-active-color: var(--bs-btn-hover-color);
   --bs-btn-active-bg: #cc4257;
   --bs-btn-active-border-color: #cc4257
@@ -7978,13 +7982,11 @@ body {
   --bs-nav-link-font-weight: 600;
   --bs-navbar-nav-link-padding-x: 1.25rem;
   --bs-navbar-padding-y: 0;
-  transition: background-color .3s ease-in-out,box-shadow .3s ease-in-out
-}
-.navbar > .container {
-  min-height: var(--hs-header-height)
-}
-.navbar-scrolled {
-  background-color: #0d0232
+  transition: background-color .3s ease-in-out,box-shadow .3s ease-in-out;
+  min-height: var(--hs-header-height);
+  background: linear-gradient(#0d0232 35%,transparent 100%);
+  padding-top: 1rem;
+  align-items: flex-start
 }
 .navbar-nav {
   --bs-nav-link-padding-y: 1.5rem
@@ -8095,7 +8097,10 @@ body {
   }
   .navbar {
     --bs-nav-link-font-size: 2rem;
-    border-bottom: 1px solid rgba(255,255,255,.1)
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    padding-top: 0;
+    align-items: center;
+    background: linear-gradient(#0d0232 55%,transparent 150%)
   }
   .navbar-brand {
     width: 130px
@@ -8174,6 +8179,9 @@ body {
   top: 0;
   left: 0;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0,0,0);
   z-index: -1;
   filter: blur(10rem)
 }
@@ -8212,7 +8220,8 @@ body {
     display: block;
     border: none;
     border-radius: 0;
-    background-color: transparent
+    background-color: transparent;
+    padding: 0
   }
   .newsletter-form_control {
     border: 1px solid #fff;
